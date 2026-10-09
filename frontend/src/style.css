@@ -1,9 +1,18 @@
 html,
-body {
+body,
+#app,
+.v-application {
   padding: 0;
   margin: 0;
   height: 100%;
   width: 100%;
+  font-family: var(--font-main);
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  line-height: var(--leading-normal);
+  font-weight: var(--font-weight-regular);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #app {
