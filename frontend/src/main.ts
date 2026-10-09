@@ -1,6 +1,13 @@
 import { createApp } from 'vue'
 import './assets/css/tokens.css' // Design Tokens
 import './style.css' // Global Styles
+
+// Cargar tema guardado en localStorage si existe
+const savedTheme = localStorage.getItem('theme')
+if (savedTheme) {
+  document.documentElement.setAttribute('data-theme', savedTheme)
+}
+
 import print from 'vue3-print-nb'
 import { setup } from 'yk-vue-plugin-hiprint'
 import DataVVue3 from '@kjgl77/datav-vue3'

@@ -7,8 +7,8 @@ interface pageHasElement {
   hasToolBar?: boolean
 }
 
-export const primaryColor = '#9C27B0'
-export const primaryLightColor = '#ECE7F6'
+export const primaryColor = '#D61C22'
+export const primaryLightColor = '#FDE8E9'
 export const lightGrey = '#999999'
 export const errorColor = '#BA2828'
 

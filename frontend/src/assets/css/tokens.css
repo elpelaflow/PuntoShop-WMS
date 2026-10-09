@@ -1,80 +1,157 @@
-:root {
-  /* ==========================================================================
-     1. COLORES DE MARCA / PRIMARIOS (Brand & Primary)
-     ========================================================================== */
-  /* Color principal de la marca y botones principales */
+/* ==========================================================================
+   SISTEMA DE TOKENS Y PALETAS DE COLOR - PUNTOSHOP WMS
+   Paletas disponibles:
+   1. default / purple: Violeta original ModernWMS
+   2. orange: Naranja dinámico
+   3. blue: Azul corporativo y logístico
+   4. green: Verde esmeralda operacional
+   5. red / puntoshop: Rojo insignia corporativo de PuntoShop
+   ========================================================================== */
+
+/* ==========================================================================
+   PALETA BASE / POR DEFECTO: VIOLETA ORIGINAL
+   ========================================================================== */
+:root,
+[data-theme="purple"],
+[data-theme="purple"] .v-application {
+  /* Colores de marca / primarios */
   --brand-primary: #9C27B0;
-
-  /* Versión oscura para hover / estados activos */
+  --brand-primary-rgb: 156, 39, 176;
   --brand-primary-dark: #7B1FA2;
-
-  /* Versión clara para fondos sutiles, chips y tags */
   --brand-primary-light: #ECE7F6;
-
-  /* Fondo suave para avatares e indicadores destacados */
   --brand-primary-subtle: #E8E2FB;
-
-  /* Color secundario / subtítulos destacados */
   --brand-secondary: #C9A7CF;
 
-  /* ==========================================================================
-     2. NAVEGACIÓN Y SIDEBAR (Gradientes y Menús)
-     ========================================================================== */
-  /* Gradiente para el item activo en el menú lateral */
+  /* Sincronización con Vuetify 3 (RGB sin 'rgb()') */
+  --v-theme-primary: 156, 39, 176;
+
+  /* Navegación y Sidebar */
   --sidebar-item-active-gradient-start: #AF85FC;
   --sidebar-item-active-gradient-end: #9155FD;
   --sidebar-item-active-text: #FFFFFF;
-
-  /* Estados interactivos del sidebar */
   --sidebar-item-text: #524E59;
   --sidebar-item-text-secondary: #696671;
   --sidebar-item-hover-bg: #EDEEF3;
   --sidebar-item-opened-bg: #E8E9ED;
   --sidebar-shadow: #DBDCE2;
 
-  /* ==========================================================================
-     3. SUPERFICIES Y FONDOS (Surfaces & Backgrounds)
-     ========================================================================== */
-  /* Fondo general de la aplicación */
+  /* Superficies y Fondos */
   --bg-app: #F4F5FA;
-
-  /* Fondo de tarjetas, tablas, modales y login */
   --bg-surface: #FFFFFF;
-
-  /* Fondo secundario (panel de login derecho, áreas de control) */
   --bg-surface-secondary: #FAFAFA;
-
-  /* Hover sutil en botones de barra de herramientas */
   --bg-tool-hover: #E4E5EA;
   --bg-tool-active: #CDCED3;
 
-  /* ==========================================================================
-     4. TIPOGRAFÍA Y TEXTO (Text & Content)
-     ========================================================================== */
+  /* Tipografía y Texto */
   --text-primary: #2F2B3D;
   --text-secondary: #524E59;
   --text-muted: #999999;
   --text-disabled: #BBBBBB;
   --text-inverse: #FFFFFF;
 
-  /* ==========================================================================
-     5. ESTADOS DEL SISTEMA Y ALERTAS (Feedback & Status)
-     ========================================================================== */
-  /* Éxito / Estado conectado */
+  /* Feedback & Estados */
   --status-success: #56CA00;
-
-  /* Error / Peligro / Notificaciones */
   --status-error: #BA2828;
   --status-error-vibrant: #FF4C51;
   --status-error-input: #B00020;
-
-  /* Advertencia / Info */
   --status-warning: #FFB400;
   --status-info: #16B1FF;
 
-  /* ==========================================================================
-     6. BORDES Y SEPARADORES (Borders & Lines)
-     ========================================================================== */
+  /* Bordes */
   --border-light: #E5E5E9;
   --border-divider: #DBDCE2;
+}
+
+/* ==========================================================================
+   PALETA 2: NARANJA DINÁMICO
+   Activación: <html data-theme="orange">
+   ========================================================================== */
+[data-theme="orange"],
+[data-theme="orange"] .v-application {
+  --brand-primary: #FF6600;
+  --brand-primary-rgb: 255, 102, 0;
+  --brand-primary-dark: #E05A00;
+  --brand-primary-light: #FFF0E6;
+  --brand-primary-subtle: #FFE0CC;
+  --brand-secondary: #FFB380;
+
+  --sidebar-item-active-gradient-start: #FFA366;
+  --sidebar-item-active-gradient-end: #FF6600;
+  --sidebar-item-active-text: #FFFFFF;
+  --sidebar-item-hover-bg: #FFF3EB;
+  --sidebar-item-opened-bg: #FFE8D6;
+
+  --v-theme-primary: 255, 102, 0;
+}
+
+/* ==========================================================================
+   PALETA 3: AZUL LOGÍSTICA / CORPORATIVO
+   Activación: <html data-theme="blue">
+   ========================================================================== */
+[data-theme="blue"],
+[data-theme="blue"] .v-application {
+  --brand-primary: #1976D2;
+  --brand-primary-rgb: 25, 118, 210;
+  --brand-primary-dark: #0D47A1;
+  --brand-primary-light: #E3F2FD;
+  --brand-primary-subtle: #BBDEFB;
+  --brand-secondary: #90CAF9;
+
+  --sidebar-item-active-gradient-start: #64B5F6;
+  --sidebar-item-active-gradient-end: #1976D2;
+  --sidebar-item-active-text: #FFFFFF;
+  --sidebar-item-hover-bg: #EBF3FC;
+  --sidebar-item-opened-bg: #DCEAF9;
+
+  --v-theme-primary: 25, 118, 210;
+}
+
+/* ==========================================================================
+   PALETA 4: VERDE ESMERALDA (OPERACIONES / ECO)
+   Activación: <html data-theme="green">
+   ========================================================================== */
+[data-theme="green"],
+[data-theme="green"] .v-application {
+  --brand-primary: #00897B;
+  --brand-primary-rgb: 0, 137, 123;
+  --brand-primary-dark: #004D40;
+  --brand-primary-light: #E0F2F1;
+  --brand-primary-subtle: #B2DFDB;
+  --brand-secondary: #80CBC4;
+
+  --sidebar-item-active-gradient-start: #4DB6AC;
+  --sidebar-item-active-gradient-end: #00897B;
+  --sidebar-item-active-text: #FFFFFF;
+  --sidebar-item-hover-bg: #E8F5F4;
+  --sidebar-item-opened-bg: #D1ECE9;
+
+  --v-theme-primary: 0, 137, 123;
+}
+
+/* ==========================================================================
+   PALETA 5: ROJA / PUNTOSHOP (MARCA OFICIAL)
+   Activación: <html data-theme="red"> o <html data-theme="puntoshop">
+   ========================================================================== */
+[data-theme="red"],
+[data-theme="puntoshop"],
+[data-theme="red"] .v-application,
+[data-theme="puntoshop"] .v-application {
+  --brand-primary: #D61C22;
+  --brand-primary-rgb: 214, 28, 34;
+  --brand-primary-dark: #B21419;
+  --brand-primary-light: #FDE8E9;
+  --brand-primary-subtle: #FCD3D5;
+  --brand-secondary: #E57373;
+
+  --sidebar-item-active-gradient-start: #EF4444;
+  --sidebar-item-active-gradient-end: #D61C22;
+  --sidebar-item-active-text: #FFFFFF;
+  --sidebar-item-hover-bg: #FDF2F2;
+  --sidebar-item-opened-bg: #FDE8E8;
+
+  --bg-app: #FAFAFA;
+  --text-primary: #0F0F0F;
+  --text-secondary: #555555;
+
+  --v-theme-primary: 214, 28, 34;
 }
