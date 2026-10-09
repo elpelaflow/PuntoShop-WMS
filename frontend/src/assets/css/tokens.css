@@ -1,0 +1,80 @@
+:root {
+  /* ==========================================================================
+     1. COLORES DE MARCA / PRIMARIOS (Brand & Primary)
+     ========================================================================== */
+  /* Color principal de la marca y botones principales */
+  --brand-primary: #9C27B0;
+
+  /* Versión oscura para hover / estados activos */
+  --brand-primary-dark: #7B1FA2;
+
+  /* Versión clara para fondos sutiles, chips y tags */
+  --brand-primary-light: #ECE7F6;
+
+  /* Fondo suave para avatares e indicadores destacados */
+  --brand-primary-subtle: #E8E2FB;
+
+  /* Color secundario / subtítulos destacados */
+  --brand-secondary: #C9A7CF;
+
+  /* ==========================================================================
+     2. NAVEGACIÓN Y SIDEBAR (Gradientes y Menús)
+     ========================================================================== */
+  /* Gradiente para el item activo en el menú lateral */
+  --sidebar-item-active-gradient-start: #AF85FC;
+  --sidebar-item-active-gradient-end: #9155FD;
+  --sidebar-item-active-text: #FFFFFF;
+
+  /* Estados interactivos del sidebar */
+  --sidebar-item-text: #524E59;
+  --sidebar-item-text-secondary: #696671;
+  --sidebar-item-hover-bg: #EDEEF3;
+  --sidebar-item-opened-bg: #E8E9ED;
+  --sidebar-shadow: #DBDCE2;
+
+  /* ==========================================================================
+     3. SUPERFICIES Y FONDOS (Surfaces & Backgrounds)
+     ========================================================================== */
+  /* Fondo general de la aplicación */
+  --bg-app: #F4F5FA;
+
+  /* Fondo de tarjetas, tablas, modales y login */
+  --bg-surface: #FFFFFF;
+
+  /* Fondo secundario (panel de login derecho, áreas de control) */
+  --bg-surface-secondary: #FAFAFA;
+
+  /* Hover sutil en botones de barra de herramientas */
+  --bg-tool-hover: #E4E5EA;
+  --bg-tool-active: #CDCED3;
+
+  /* ==========================================================================
+     4. TIPOGRAFÍA Y TEXTO (Text & Content)
+     ========================================================================== */
+  --text-primary: #2F2B3D;
+  --text-secondary: #524E59;
+  --text-muted: #999999;
+  --text-disabled: #BBBBBB;
+  --text-inverse: #FFFFFF;
+
+  /* ==========================================================================
+     5. ESTADOS DEL SISTEMA Y ALERTAS (Feedback & Status)
+     ========================================================================== */
+  /* Éxito / Estado conectado */
+  --status-success: #56CA00;
+
+  /* Error / Peligro / Notificaciones */
+  --status-error: #BA2828;
+  --status-error-vibrant: #FF4C51;
+  --status-error-input: #B00020;
+
+  /* Advertencia / Info */
+  --status-warning: #FFB400;
+  --status-info: #16B1FF;
+
+  /* ==========================================================================
+     6. BORDES Y SEPARADORES (Borders & Lines)
+     ========================================================================== */
+  --border-light: #E5E5E9;
+  --border-divider: #DBDCE2;
+}

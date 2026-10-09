@@ -195,11 +195,11 @@ const firstName = computed(() => {
       cursor: pointer;
 
       &:hover {
-        background-color: #e4e5ea;
+        background-color: var(--bg-tool-hover);
       }
 
       &:active {
-        background-color: #cdced3;
+        background-color: var(--bg-tool-active);
       }
     }
 
@@ -211,7 +211,7 @@ const firstName = computed(() => {
         width: 11px;
         height: 11px;
         border-radius: 11px;
-        background-color: #ff4c51;
+        background-color: var(--status-error-vibrant);
         border: 1px solid #fff;
         position: absolute;
         top: 5px;
@@ -223,7 +223,7 @@ const firstName = computed(() => {
       border-radius: 40px;
       width: 40px;
       height: 40px;
-      background-color: #e8e2fb;
+      background-color: var(--brand-primary-subtle);
       position: relative;
 
       .alive {
@@ -231,7 +231,7 @@ const firstName = computed(() => {
         width: 11px;
         height: 11px;
         border-radius: 11px;
-        background-color: #56ca00;
+        background-color: var(--status-success);
         border: 1px solid #fff;
         position: absolute;
         bottom: 1px;
@@ -243,6 +243,6 @@ const firstName = computed(() => {
 
 .firstName {
   font-weight: 600;
-  color: #9c27b0;
+  color: var(--brand-primary);
 }
 </style>

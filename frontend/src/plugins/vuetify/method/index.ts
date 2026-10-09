@@ -7,6 +7,8 @@ export function getSelcectedLangForVuetify(lang: string) {
       return 'en'
     case 'tw':
       return 'zhHant'
+    case 'es':
+      return 'es'
     default:
       return 'en'
   }

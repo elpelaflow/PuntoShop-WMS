@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import './assets/css/tokens.css' // Design Tokens
 import './style.css' // Global Styles
 import print from 'vue3-print-nb'
 import { setup } from 'yk-vue-plugin-hiprint'

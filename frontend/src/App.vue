@@ -73,7 +73,7 @@ onMounted(() => {
 .appViewContainer {
   height: 100%;
   width: 100%;
-  background-color: #f4f5fa;
+  background-color: var(--bg-app);
 }
 
 .mask {

@@ -107,7 +107,7 @@ onMounted(() => {
 @sideBarTitleHeight: 70px;
 .homeSidebar {
   width: @sideBarWidth;
-  box-shadow: 5px 5px 5px #dbdce2;
+  box-shadow: 5px 5px 5px var(--sidebar-shadow);
   height: 100%;
   .sideBarTitle {
     height: @sideBarTitleHeight;
@@ -128,7 +128,7 @@ onMounted(() => {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: #696671;
+      color: var(--sidebar-item-text-secondary);
       cursor: pointer;
       .menuIcon {
         height: 100%;
@@ -143,18 +143,18 @@ onMounted(() => {
         }
       }
       &:hover {
-        background-color: #edeef3;
+        background-color: var(--sidebar-item-hover-bg);
       }
     }
 
     .openedMenuItems {
-      background-color: #e8e9ed;
+      background-color: var(--sidebar-item-opened-bg);
     }
     .activeMenuItems {
-      background: linear-gradient(to right, #af85fc, #9155fd);
-      color: #fff;
+      background: linear-gradient(to right, var(--sidebar-item-active-gradient-start), var(--sidebar-item-active-gradient-end));
+      color: var(--sidebar-item-active-text);
       &:hover {
-        background: linear-gradient(to right, #af85fc, #9155fd);
+        background: linear-gradient(to right, var(--sidebar-item-active-gradient-start), var(--sidebar-item-active-gradient-end));
       }
     }
 
@@ -164,7 +164,7 @@ onMounted(() => {
 
     &::-webkit-scrollbar-thumb {
       border-radius: 20px;
-      background-color: #e5e5e9;
+      background-color: var(--border-light);
     }
   }
 }

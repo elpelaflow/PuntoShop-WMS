@@ -117,7 +117,11 @@ http.interceptors.request.use(
       case 'zh':
         culture = 'zh-cn'
         break
+      case 'es':
+        culture = 'es-es'
+        break
       case 'en':
+      default:
         culture = 'en-us'
         break
     }

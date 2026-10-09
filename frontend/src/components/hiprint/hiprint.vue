@@ -493,7 +493,7 @@ defineExpose({
 :deep(.hiprint-printElement-type > li > ul > li > a) {
   padding: 4px 4px !important;
   color: white !important;
-  background-color: #9c27b0 !important;
+  background-color: var(--brand-primary) !important;
   font-family: 'Roboto', sans-serif !important;
   font-weight: 500 !important;
   line-height: normal !important;
@@ -516,7 +516,7 @@ defineExpose({
 
 // 最右边样式，确认按钮背景色
 :deep(.hiprint-option-item-settingBtn) {
-  background: #9c27b0 !important;
+  background: var(--brand-primary) !important;
 }
 
 // 最右边样式，删除按钮背景色

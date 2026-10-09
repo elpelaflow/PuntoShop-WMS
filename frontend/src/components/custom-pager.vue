@@ -88,6 +88,7 @@ const PAGER_SIZE_OPTION = computed(() => {
   }
   return res
 })
+// @ts-ignore
 const TOTAL_RECORD = computed(() => `${ i18n.global.t('system.pager.total') } ${ props.total } ${ i18n.global.t('system.pager.record') }`)
 const PAGER_LENGTH = computed(() => {
   if (!props.total) {

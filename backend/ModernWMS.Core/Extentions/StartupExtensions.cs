@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -131,7 +131,7 @@ namespace ModernWMS.Core.Extentions
             app.UseTokenGeneratorConfigure(configuration);
             app.UseAuthorization();
             app.UseMiddleware<GlobalExceptionMiddleware>();
-            var support_languages = new[] { "zh-cn", "en-us" };
+            var support_languages = new[] { "zh-cn", "en-us", "es-es" };
             var localization_options = new RequestLocalizationOptions()
                 .SetDefaultCulture(support_languages[0])
                 .AddSupportedCultures(support_languages)

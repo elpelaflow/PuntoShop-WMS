@@ -29,9 +29,10 @@ const { current } = useLocale()
 const data = reactive({
   showLanguage: false,
   languageList: [
+    { title: 'Español', value: 'es' },
+    { title: 'English', value: 'en' },
     { title: '简体中文', value: 'zh' },
-    { title: '繁體中文', value: 'tw' },
-    { title: 'English', value: 'en' }
+    { title: '繁體中文', value: 'tw' }
   ]
 })
 

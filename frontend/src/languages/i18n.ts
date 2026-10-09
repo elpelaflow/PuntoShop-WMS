@@ -30,11 +30,19 @@ function getStorageLang() {
     langStr = browserLang[0]
   }
 
+  if (langStr.startsWith('es')) {
+    return 'es_ES'
+  }
+
   switch (langStr) {
     case 'zh-CN':
       return 'zh_CN'
     case 'zh-TW':
       return 'zh_TW'
+    case 'es':
+    case 'es-ES':
+    case 'es-AR':
+      return 'es_ES'
     case 'en':
     default:
       return 'en_US'
