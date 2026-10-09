@@ -15,6 +15,7 @@
 <script lang="ts" setup>
 import { onMounted, ref, watch } from 'vue'
 import * as echarts from 'echarts'
+import i18n from '@/languages/i18n'
 
 const props = defineProps({
   pieData: Object,
@@ -53,7 +54,7 @@ const initCharts = () => {
         },
         tooltip: {
           valueFormatter(value) {
-            return `存货数量：${ value }`
+            return `${ i18n.global.t('vwms.stockQuantity') }: ${ value }`
           }
         },
         markLine: {

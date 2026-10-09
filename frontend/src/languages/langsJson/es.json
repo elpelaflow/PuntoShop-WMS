@@ -769,5 +769,39 @@
         "putaway_date": "Fecha de ubicación"
       }
     }
+  },
+  "vwms": {
+    "collapseRight": "Contraer panel lateral",
+    "expandRight": "Expandir panel lateral",
+    "fullscreen": "Pantalla completa",
+    "back": "Volver",
+    "closeShelfGrid": "Cerrar vista 2D del rack",
+    "openShelfGrid": "Abrir vista 2D del rack",
+    "stockProductQty": "Stock de productos",
+    "areaCapacity": "Capacidad por sector",
+    "areaStockQty": "Stock en el sector",
+    "shelfCapacity": "Capacidad por rack",
+    "shelfSkuQty": "Variantes en el rack",
+    "locationCapacity": "Capacidad por ubicación",
+    "shelfName": "Rack N° {name}",
+    "locationTag": "Ubicación N° {tag}",
+    "noLocation": "Sin ubicación",
+    "manager": "Responsable",
+    "contactTel": "Teléfono",
+    "areaCount": "Sectores",
+    "stockQty": "Stock total",
+    "totalShelves": "Total de racks",
+    "totalLocations": "Total de ubicaciones",
+    "availableLocations": "Ubicaciones libres",
+    "totalProducts": "Total de productos",
+    "shelfDimensions": "Dimensiones del rack",
+    "idleLocations": "Ubicaciones vacías",
+    "layerNumber": "Nivel / Piso",
+    "shelfCode": "Código de rack",
+    "emptyLocation": "Ubicación vacía",
+    "productName": "Producto",
+    "skuName": "Variante / SKU",
+    "qty": "Cantidad",
+    "stockQuantity": "Cantidad en stock"
   }
 }

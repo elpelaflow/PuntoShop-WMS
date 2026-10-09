@@ -769,5 +769,39 @@
         "putaway_date":"Listing Date"
       }
     }
+  },
+  "vwms": {
+    "collapseRight": "Collapse sidebar",
+    "expandRight": "Expand sidebar",
+    "fullscreen": "Fullscreen",
+    "back": "Back",
+    "closeShelfGrid": "Close shelf 2D view",
+    "openShelfGrid": "Open shelf 2D view",
+    "stockProductQty": "Inventory quantity",
+    "areaCapacity": "Reservoir capacity",
+    "areaStockQty": "Reservoir inventory quantity",
+    "shelfCapacity": "Shelf capacity",
+    "shelfSkuQty": "Shelf SKU quantity",
+    "locationCapacity": "Location capacity",
+    "shelfName": "Shelf No. {name}",
+    "locationTag": "Location No. {tag}",
+    "noLocation": "No location",
+    "manager": "Manager",
+    "contactTel": "Contact tel",
+    "areaCount": "Reservoir count",
+    "stockQty": "Total stock",
+    "totalShelves": "Total shelves",
+    "totalLocations": "Total locations",
+    "availableLocations": "Available locations",
+    "totalProducts": "Total products",
+    "shelfDimensions": "Shelf dimensions",
+    "idleLocations": "Idle locations",
+    "layerNumber": "Layer number",
+    "shelfCode": "Shelf code",
+    "emptyLocation": "Empty location",
+    "productName": "Product name",
+    "skuName": "Specification name",
+    "qty": "Quantity",
+    "stockQuantity": "Stock quantity"
   }
 }
