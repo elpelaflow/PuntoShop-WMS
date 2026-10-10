@@ -1,6 +1,6 @@
-# PuntoShop WMS - Backend (.NET 7.0)
+# WMS - Backend (.NET 7.0)
 
-Este directorio contiene la capa de backend y lógica de negocio de **PuntoShop WMS**, construida sobre **ASP.NET Core (.NET 7.0)**.
+Este directorio contiene la capa de backend y lógica de negocio de **WMS**, construida sobre **ASP.NET Core (.NET 7.0)**.
 
 ## Estructura de Proyectos
 

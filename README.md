@@ -1,10 +1,10 @@
-# PuntoShop WMS - Sistema de Gestión de Almacenes
+# WMS - Sistema de Gestión de Almacenes
 
 <div align="center">
-  <img src="logo.png" alt="PuntoShop WMS logo" width="420" height="auto" />
-  <h1>PuntoShop WMS</h1>
+  <img src="logo.png" alt="WMS logo" width="420" height="auto" />
+  <h1>WMS</h1>
   <p><strong>Sistema de Gestión de Almacenes (WMS) ágil, moderno y de código abierto</strong></p>
-  <p><em>Personalizado e impulsado para optimizar la logística, control de inventario y despacho de mercancías.</em></p>
+  <p><em>Optimizado para la gestión logística, control de inventario y despacho de mercancías.</em></p>
 
 <!-- Badges -->
 [![License: Apache2.0](https://img.shields.io/badge/Licencia-Apache2.0-orange.svg)](https://opensource.org/license/apache-2-0/)
@@ -58,7 +58,7 @@
 
 ## Introducción
 
-**PuntoShop WMS** es una solución integral para la administración, trazabilidad y control de inventarios en depósitos y centros de distribución. Diseñado para ofrecer una experiencia fluida, rápida y adaptable a las necesidades operativas reales de pequeñas, medianas y grandes empresas.
+**WMS** es una solución integral para la administración, trazabilidad y control de inventarios en depósitos y centros de distribución. Diseñado para ofrecer una experiencia fluida, rápida y adaptable a las necesidades operativas reales de pequeñas, medianas y grandes empresas.
 
 Basado en el motor de código abierto **ModernWMS**, incorpora mejoras en interfaz gráfica, esquemas de estilos temáticos dinámicos, soporte multiidioma y flujos de automatización local listos para usar en entornos Windows y Linux.
 
@@ -169,7 +169,7 @@ Una vez levantados los servicios, ingresa desde tu navegador a:
 ## Estructura del Proyecto
 
 ```text
-PuntoShop WMS/
+WMS/
 ├── backend/                  # Código fuente del Backend (.NET 7.0)
 │   ├── ModernWMS/            # API Web, controladores, Startup y appsettings.json
 │   │   └── wms.db            # Base de datos SQLite local preconfigurada
@@ -215,14 +215,14 @@ PuntoShop WMS/
    ```bash
    cd ../backend
    dotnet publish -c Release
-   mkdir -p /opt/puntoshop-wms/backend
-   cp -rf ModernWMS/bin/Release/net7.0/publish/* /opt/puntoshop-wms/backend/
-   cp -rf ModernWMS/wms.db /opt/puntoshop-wms/backend/
+   mkdir -p /opt/wms/backend
+   cp -rf ModernWMS/bin/Release/net7.0/publish/* /opt/wms/backend/
+   cp -rf ModernWMS/wms.db /opt/wms/backend/
    ```
 
 4. **Ejecutar Backend:**
    ```bash
-   cd /opt/puntoshop-wms/backend/
+   cd /opt/wms/backend/
    dotnet ModernWMS.dll --urls http://0.0.0.0:21011
    ```
 
@@ -233,7 +233,7 @@ PuntoShop WMS/
 1. Compila el backend:
    ```cmd
    cd backend
-   dotnet publish -c Release -o C:\PuntoShopWMS\backend
+   dotnet publish -c Release -o C:\WMS\backend
    ```
 2. Compila el frontend:
    ```cmd
@@ -250,8 +250,8 @@ El directorio `docker/` contiene las definiciones necesarias para empaquetar tan
 
 ```bash
 cd docker
-docker build -t puntoshop-wms:1.0 .
-docker run -d -p 21011:21011 -p 80:80 --name puntoshop-wms puntoshop-wms:1.0 ./run.sh
+docker build -t wms:1.0 .
+docker run -d -p 21011:21011 -p 80:80 --name wms wms:1.0 ./run.sh
 ```
 
 ---
@@ -284,5 +284,5 @@ Basado en el software libre original [ModernWMS](https://github.com/fjykTec/Mode
 ---
 
 <div align="center">
-  <p>PuntoShop WMS © 2026 - Desarrollado y optimizado para la gestión logística eficiente.</p>
+  <p>WMS © 2026 - Desarrollado y optimizado para la gestión logística eficiente.</p>
 </div>

@@ -1,6 +1,6 @@
-# PuntoShop WMS - Frontend (Vue 3 + Vite)
+# WMS - Frontend (Vue 3 + Vite)
 
-Este directorio contiene la aplicación cliente (Single Page Application) de **PuntoShop WMS**, desarrollada con **Vue 3**, **Vite**, **TypeScript** y **Vuetify 3**.
+Este directorio contiene la aplicación cliente (Single Page Application) de **WMS**, desarrollada con **Vue 3**, **Vite**, **TypeScript** y **Vuetify 3**.
 
 ## Stack Tecnológico
 

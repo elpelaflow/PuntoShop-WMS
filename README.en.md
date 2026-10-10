@@ -1,8 +1,8 @@
-# PuntoShop WMS - Warehouse Management System
+# WMS - Warehouse Management System
 
 <div align="center">
-  <img src="logo.png" alt="PuntoShop WMS logo" width="420" height="auto" />
-  <h1>PuntoShop WMS</h1>
+  <img src="logo.png" alt="WMS logo" width="420" height="auto" />
+  <h1>WMS</h1>
   <p>A simple, complete and open source warehouse management system (based on ModernWMS)</p>
 
 <!-- Badges -->
@@ -37,7 +37,7 @@
 
 # Contents
 
-- [PuntoShop WMS - Warehouse Management System](#puntoshop-wms---warehouse-management-system)
+- [WMS - Warehouse Management System](#wms---warehouse-management-system)
 - [Contents](#contents)
   - [Introduction](#introduction)
   - [System Architecture](#system-architecture)
@@ -56,7 +56,7 @@
 
 ## Introduction 
 
-**PuntoShop WMS** is a practical and complete warehouse and inventory management system designed to streamline supply chain logistics for small and medium-sized operations. It provides robust capabilities for inventory control, goods receipt, dispatch, barcode/QR code tracking, and multi-warehouse operations.
+**WMS** is a practical and complete warehouse and inventory management system designed to streamline supply chain logistics for small and medium-sized operations. It provides robust capabilities for inventory control, goods receipt, dispatch, barcode/QR code tracking, and multi-warehouse operations.
 
 ## System Architecture
 
@@ -174,8 +174,8 @@ npm run dev -- --host 0.0.0.0
 You can build and deploy the containerized environment using the Docker configuration provided in the `docker/` folder:
 ```bash
 cd docker
-docker build -t puntoshop-wms:1.0 .
-docker run -d -p 21011:21011 -p 80:80 puntoshop-wms:1.0 ./run.sh
+docker build -t wms:1.0 .
+docker run -d -p 21011:21011 -p 80:80 wms:1.0 ./run.sh
 ```
 
 ---
@@ -194,3 +194,9 @@ Open your web browser and navigate to:
 
 Distributed under the [Apache-2.0](https://opensource.org/license/apache-2-0/) / [MIT](https://opensource.org/licenses/MIT/) License. See `LICENSE` for details.  
 Based on the original open source software [ModernWMS](https://github.com/fjykTec/ModernWMS).
+
+---
+
+<div align="center">
+  <p>WMS © 2026 - Developed and optimized for efficient logistics management.</p>
+</div>
