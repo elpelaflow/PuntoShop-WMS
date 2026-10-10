@@ -279,7 +279,7 @@ Por defecto, el sistema viene configurado para usar **SQLite** con el archivo `b
 ## Licencia y Créditos
 
 Este proyecto se distribuye bajo la licencia **[Apache 2.0](https://opensource.org/license/apache-2-0/) / [MIT](https://opensource.org/licenses/MIT/)**.  
-Basado en el software libre original **ModernWMS**.
+Basado en el software libre original [ModernWMS](https://github.com/fjykTec/ModernWMS).
 
 ---
 

@@ -192,4 +192,5 @@ Open your web browser and navigate to:
 
 ## License
 
-Distributed under the [Apache-2.0](https://opensource.org/license/apache-2-0/) / [MIT](https://opensource.org/licenses/MIT/) License. See `LICENSE` for details.
+Distributed under the [Apache-2.0](https://opensource.org/license/apache-2-0/) / [MIT](https://opensource.org/licenses/MIT/) License. See `LICENSE` for details.  
+Based on the original open source software [ModernWMS](https://github.com/fjykTec/ModernWMS).
