@@ -67,7 +67,7 @@ import i18n from '@/languages/i18n'
 
 .brandTitle {
   font-family: var(--font-title);
-  font-size: 130px;
+  font-size: clamp(52px, 12vw, 130px);
   font-weight: var(--font-weight-black);
   line-height: 0.95;
   letter-spacing: -2px;
@@ -83,10 +83,10 @@ import i18n from '@/languages/i18n'
 
 .brandTagline {
   font-family: var(--font-main);
-  font-size: 32px;
+  font-size: clamp(16px, 3.5vw, 32px);
   font-weight: var(--font-weight-bold);
   color: var(--text-primary);
-  margin-top: -12px;
+  margin-top: -6px;
   letter-spacing: -0.5px;
   user-select: none;
 
@@ -99,15 +99,27 @@ import i18n from '@/languages/i18n'
   display: flex;
   justify-content: center;
   width: 100%;
-  font-size: 20px;
+  font-size: clamp(13px, 2.5vw, 20px);
   font-weight: var(--font-weight-medium);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: var(--text-muted);
   margin-top: 15px;
+  text-align: center;
+  padding: 0 16px;
 }
 
 .lottieBox {
   min-width: 100%;
   max-width: 100%;
+}
+
+@media (max-width: 960px) {
+  .content {
+    width: 95%;
+  }
+
+  .textBox {
+    top: 8%;
+  }
 }
 </style>

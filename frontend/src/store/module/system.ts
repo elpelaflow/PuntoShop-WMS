@@ -9,7 +9,8 @@ export const system = {
     clientWidth: 0,
     clientHeight: 0,
     currentRouterPath: '',
-    refreshFlag: false
+    refreshFlag: false,
+    isMobileSidebarOpen: false
   },
   mutations: {
     setCurrentRouterPath(state: StateProps, path: string) {
@@ -40,6 +41,12 @@ export const system = {
     },
     setClientHeight(state: StateProps, clientHeight: number) {
       state.clientHeight = clientHeight
+    },
+    setMobileSidebarOpen(state: StateProps, val: boolean) {
+      state.isMobileSidebarOpen = val
+    },
+    toggleMobileSidebar(state: StateProps) {
+      state.isMobileSidebarOpen = !state.isMobileSidebarOpen
     }
   },
   actions: {},
@@ -61,6 +68,9 @@ export const system = {
     },
     refreshFlag(state: StateProps) {
       return state.refreshFlag
+    },
+    isMobileSidebarOpen(state: StateProps) {
+      return !!state.isMobileSidebarOpen
     }
   }
 }

@@ -25,4 +25,5 @@ export interface StateProps {
   clientWidth: number
   clientHeight: number
   refreshFlag: boolean
+  isMobileSidebarOpen?: boolean
 }

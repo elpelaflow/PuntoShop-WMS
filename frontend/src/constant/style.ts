@@ -37,8 +37,10 @@ export const SYSTEM_HEIGHT = {
 
 // The height of the content card
 export const computedCardHeight = ({ hasTab = true, hasOperateBtn = true }: pageHasElement) => {
-  const clientHeight = store.getters['system/clientHeight']
-  const EXTRA_MARGIN = 100
+  const clientHeight = store.getters['system/clientHeight'] || window.innerHeight || 800
+  const clientWidth = store.getters['system/clientWidth'] || window.innerWidth || 1200
+  const isMobile = clientWidth <= 960
+  const EXTRA_MARGIN = isMobile ? 60 : 100
 
   let res = clientHeight - SYSTEM_HEIGHT.HEADER - EXTRA_MARGIN
 
@@ -46,7 +48,11 @@ export const computedCardHeight = ({ hasTab = true, hasOperateBtn = true }: page
     res -= SYSTEM_HEIGHT.TAB
   }
   if (hasOperateBtn) {
-    res -= SYSTEM_HEIGHT.OPERATE_BAR
+    res -= isMobile ? 160 : SYSTEM_HEIGHT.OPERATE_BAR
+  }
+
+  if (res < 280) {
+    res = 280
   }
 
   return `${ res }px`
@@ -54,8 +60,10 @@ export const computedCardHeight = ({ hasTab = true, hasOperateBtn = true }: page
 
 // The height of the table
 export const computedTableHeight = ({ hasPager = true, hasTab = true, hasOperateBtn = true }: pageHasElement) => {
-  const clientHeight = store.getters['system/clientHeight']
-  const EXTRA_MARGIN = 100
+  const clientHeight = store.getters['system/clientHeight'] || window.innerHeight || 800
+  const clientWidth = store.getters['system/clientWidth'] || window.innerWidth || 1200
+  const isMobile = clientWidth <= 960
+  const EXTRA_MARGIN = isMobile ? 60 : 100
 
   let res = clientHeight - SYSTEM_HEIGHT.HEADER - EXTRA_MARGIN
 
@@ -66,7 +74,11 @@ export const computedTableHeight = ({ hasPager = true, hasTab = true, hasOperate
     res -= SYSTEM_HEIGHT.TAB
   }
   if (hasOperateBtn) {
-    res -= SYSTEM_HEIGHT.OPERATE_BAR
+    res -= isMobile ? 160 : SYSTEM_HEIGHT.OPERATE_BAR
+  }
+
+  if (res < 240) {
+    res = 240
   }
 
   return `${ res }px`

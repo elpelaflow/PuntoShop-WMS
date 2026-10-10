@@ -211,9 +211,9 @@ onMounted(() => {
 
 <style scoped lang="less">
 .loginForm {
-  // min-height: ;
-  height: 50%;
   width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
   box-sizing: border-box;
   padding: 16px;
   .titleText {

@@ -3,6 +3,13 @@
     <div class="homeSidebar">
       <div class="sideBarTitle">
         <Logo :height="44" :top="13" :left="15" />
+        <v-btn
+          icon="mdi-close"
+          variant="text"
+          size="small"
+          class="sidebarCloseBtn"
+          @click="method.closeSidebar"
+        ></v-btn>
       </div>
       <div class="sideBarMenus">
         <div v-for="(item, index) in data.menuList" :key="index">
@@ -64,22 +71,23 @@ const data: SideBarDataProps = reactive({
 })
 
 const method = reactive({
+  closeSidebar: () => {
+    store.commit('system/setMobileSidebarOpen', false)
+  },
   // Open menu
   openMenu: (item: SideBarMenu) => {
     if (item.children && item.children.length > 0) {
       item.showDetail = !item.showDetail
-    } else if (item.routerPath && currentRouterPath.value !== item.routerPath) {
-      // If the selected menu is skipped, no action will be taken
-      store.commit('system/setCurrentRouterPath', item.routerPath)
-      store.commit('system/addOpenedMenu', item.routerPath)
-      router.push(item.routerPath)
+    } else if (item.routerPath) {
+      if (currentRouterPath.value !== item.routerPath) {
+        store.commit('system/setCurrentRouterPath', item.routerPath)
+        store.commit('system/addOpenedMenu', item.routerPath)
+        router.push(item.routerPath)
+      }
+      if (window.innerWidth <= 960) {
+        store.commit('system/setMobileSidebarOpen', false)
+      }
     }
-    // if (menuName === 'login') {
-    //   store.commit('system/clearOpenedMenu', menuName)
-    // } else {
-    //   store.commit('system/addOpenedMenu', menuName)
-    // }
-    // router.push(menuName)
   },
   // Get item class
   getItemClass: (item: SideBarMenu) => {
@@ -175,5 +183,19 @@ onMounted(() => {
 
 .padding-l{
   padding-left: 44px !important;
+}
+
+.sidebarCloseBtn {
+  display: none !important;
+}
+
+@media (max-width: 960px) {
+  .sidebarCloseBtn {
+    display: inline-flex !important;
+    position: absolute;
+    right: 12px;
+    top: 18px;
+    color: var(--sidebar-item-text-secondary, #524e59);
+  }
 }
 </style>

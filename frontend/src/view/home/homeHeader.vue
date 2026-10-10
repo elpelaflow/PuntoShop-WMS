@@ -1,11 +1,20 @@
 <template>
   <div class="homeHeader">
-    <div class="menuTitle">
-      <v-breadcrumbs :items="data.breadcrumbItems">
-        <template #prepend>
-          <v-icon :color="lightGrey" size="small" icon="mdi-form-select"></v-icon>
-        </template>
-      </v-breadcrumbs>
+    <div class="headerLeft">
+      <v-btn
+        icon="mdi-menu"
+        variant="text"
+        size="small"
+        class="menuToggleBtn mr-1"
+        @click="method.toggleSidebar"
+      ></v-btn>
+      <div class="menuTitle">
+        <v-breadcrumbs :items="data.breadcrumbItems">
+          <template #prepend>
+            <v-icon :color="lightGrey" size="small" icon="mdi-form-select"></v-icon>
+          </template>
+        </v-breadcrumbs>
+      </div>
     </div>
     <div class="toolsBar">
       <div class="gitSrc mr-4">
@@ -107,6 +116,9 @@ const method = reactive({
   },
   toGit: () => {
     window.open('https://github.com/elpelaflow/PuntoShop-WMS', '_blank')
+  },
+  toggleSidebar: () => {
+    store.commit('system/toggleMobileSidebar')
   }
 })
 
@@ -134,6 +146,17 @@ const firstName = computed(() => {
   box-shadow: 0 3px 3px -2px var(--v-shadow-key-umbra-opacity, rgba(0, 0, 0, 0.2)),
     0 3px 4px 0 var(--v-shadow-key-penumbra-opacity, rgba(0, 0, 0, 0.14)), 0 1px 8px 0 var(--v-shadow-key-penumbra-opacity, rgba(0, 0, 0, 0.12));
   background-color: rgba(255, 255, 255, 0.5);
+
+  .headerLeft {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .menuToggleBtn {
+      display: none !important;
+      color: var(--text-primary);
+    }
+  }
 
   .menuTitle {
     display: flex;
@@ -232,5 +255,50 @@ const firstName = computed(() => {
 .firstName {
   font-weight: 600;
   color: var(--brand-primary);
+}
+
+@media (max-width: 960px) {
+  .homeHeader {
+    padding: 0 10px;
+    border-radius: 0 0 6px 6px;
+
+    .headerLeft {
+      .menuToggleBtn {
+        display: inline-flex !important;
+      }
+    }
+
+    .menuTitle {
+      max-width: 140px;
+      overflow: hidden;
+
+      :deep(.v-breadcrumbs) {
+        padding: 0;
+
+        .v-breadcrumbs-item {
+          font-size: 13px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .v-breadcrumbs-divider {
+          padding: 0 4px;
+        }
+      }
+    }
+
+    .gitSrc {
+      display: none !important;
+    }
+
+    .toolsBar {
+      .toolItems.headPortrait {
+        margin-left: 6px !important;
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
 }
 </style>
