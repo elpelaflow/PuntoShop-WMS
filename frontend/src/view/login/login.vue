@@ -1,6 +1,6 @@
 <template>
   <div class="loginContainer">
-    <Logo />
+    <Logo variant="white" :height="55" :top="20" :left="20" />
     <div class="loginLeft">
       <img src="../../assets/img/loginLeft.png" style="width: 80%" />
     </div>

@@ -2,7 +2,7 @@
   <div style="height: 100%">
     <div class="homeSidebar">
       <div class="sideBarTitle">
-        <Logo :height="50" :top="15" :left="5" />
+        <Logo :height="44" :top="13" :left="15" />
       </div>
       <div class="sideBarMenus">
         <div v-for="(item, index) in data.menuList" :key="index">
