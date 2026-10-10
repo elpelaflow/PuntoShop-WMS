@@ -91,10 +91,10 @@ flowchart LR
     end
 
     subgraph Database ["Almacenamiento de Datos"]
-        DB[("SQLite (wms.db)\n/ MySQL / PostgreSQL / SQL Server")]
+        DB[("SQLite (wms.db)<br/>MySQL / PostgreSQL / SQL Server")]
     end
 
-    UI -->|HTTP / REST (Puerto 5173 -> 21011)| API
+    UI -->|"HTTP / REST (Puerto 5173 a 21011)"| API
     API --> Core
     Core --> DB
 ```
