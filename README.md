@@ -1,7 +1,7 @@
 # PuntoShop WMS - Sistema de Gestión de Almacenes
 
 <div align="center">
-  <img src="logo.png" alt="PuntoShop WMS logo" width="220" height="auto" />
+  <img src="logo.png" alt="PuntoShop WMS logo" width="420" height="auto" />
   <h1>PuntoShop WMS</h1>
   <p><strong>Sistema de Gestión de Almacenes (WMS) ágil, moderno y de código abierto</strong></p>
   <p><em>Personalizado e impulsado para optimizar la logística, control de inventario y despacho de mercancías.</em></p>

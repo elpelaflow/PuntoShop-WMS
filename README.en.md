@@ -1,7 +1,7 @@
 # PuntoShop WMS - Warehouse Management System
 
 <div align="center">
-  <img src="logo.png" alt="PuntoShop WMS logo" width="200" height="auto" />
+  <img src="logo.png" alt="PuntoShop WMS logo" width="420" height="auto" />
   <h1>PuntoShop WMS</h1>
   <p>A simple, complete and open source warehouse management system (based on ModernWMS)</p>
 

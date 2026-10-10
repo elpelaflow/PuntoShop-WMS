@@ -1,7 +1,7 @@
 # ModernWMS - 仓库管理系统 
 
 <div align="center">
-  <img src="logo.png" alt="ModernWMS logo" width="200" height="auto" />
+  <img src="logo.png" alt="ModernWMS logo" width="420" height="auto" />
   <h1>ModernWMS</h1>
   <p>开源的简易完整的仓库管理系统</p>
 
