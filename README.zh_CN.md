@@ -35,9 +35,12 @@
 ![NodeJS](https://img.shields.io/badge/NodeJS-16.13.1-green)
 </div>
 <div align="center">
-  <h3>
-  <a href="https://gitee.com/modernwms/ModernWMS/blob/master/README.md">English Document</a>
-  </h3>
+  <p>
+    <strong>语言 / Languages:</strong>
+    <a href="README.md">Español (主要)</a> |
+    <a href="README.en.md">English</a> |
+    <strong>中文文档</strong>
+  </p>
   <h3>
   <a href="https://modernwms.ikeyly.com">官网首页</a>
   </h3>
