@@ -1,8 +1,6 @@
-# WMS - Warehouse Management System
-
 <div align="center">
+  <h1 align="center">WMS - Warehouse Management System</h1>
   <img src="logo.png" alt="WMS logo" width="420" height="auto" />
-  <h1>WMS</h1>
   <p>A simple, complete and open source warehouse management system (based on ModernWMS)</p>
 
 <!-- Badges -->

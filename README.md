@@ -1,8 +1,6 @@
-# WMS - Sistema de Gestión de Almacenes
-
 <div align="center">
+  <h1 align="center">WMS - Sistema de Gestión de Almacenes</h1>
   <img src="logo.png" alt="WMS logo" width="420" height="auto" />
-  <h1>WMS</h1>
   <p><strong>Sistema de Gestión de Almacenes (WMS) ágil, moderno y de código abierto</strong></p>
   <p><em>Optimizado para la gestión logística, control de inventario y despacho de mercancías.</em></p>
 
