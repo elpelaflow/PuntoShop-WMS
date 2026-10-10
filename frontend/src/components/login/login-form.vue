@@ -221,11 +221,10 @@ onMounted(() => {
     padding: 20px;
     h5 {
       font-size: 1.5rem !important;
-      font-weight: 500;
+      font-weight: var(--font-weight-medium);
       line-height: 2rem;
       letter-spacing: normal !important;
-      font-family: inter, sans-serif, -apple-system, blinkmacsystemfont, Segoe UI, roboto, Helvetica Neue, arial, sans-serif, 'Apple Color Emoji',
-        'Segoe UI Emoji', Segoe UI Symbol !important;
+      font-family: var(--font-title) !important;
       text-transform: none !important;
     }
   }

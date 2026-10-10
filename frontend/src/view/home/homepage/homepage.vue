@@ -48,7 +48,7 @@ import i18n from '@/languages/i18n'
   transform: translate(-50%, 0);
   letter-spacing: 5px;
   z-index: 999;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: var(--font-title);
 }
 
 .mainTitle {
