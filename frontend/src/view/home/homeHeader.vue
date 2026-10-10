@@ -9,13 +9,7 @@
     </div>
     <div class="toolsBar">
       <div class="gitSrc mr-4">
-        <img src="@/assets/img/gitee.png" alt="Gitee" @click="method.toGit('gitee')" />
-      </div>
-      <div class="gitSrc mr-4">
-        <img src="@/assets/img/github.png" alt="Gitee" @click="method.toGit('github')" />
-      </div>
-      <div class="gitSrc mr-4">
-        <img src="@/assets/img/apifox.png" alt="API" @click="method.toGit('apifox')" />
+        <img src="@/assets/img/github.png" alt="GitHub" @click="method.toGit()" />
       </div>
       <LanguagesSwitch />
       <v-menu>
@@ -111,14 +105,8 @@ const method = reactive({
       ViewLogDialogRef.value.openDialog()
     }
   },
-  toGit: (type: string) => {
-    if (type === 'gitee') {
-      window.open('https://gitee.com/modernwms/ModernWMS', '_blank')
-    } else if (type === 'github') {
-      window.open('https://github.com/fjykTec/ModernWMS', '_blank')
-    } else if (type === 'apifox') {
-      window.open('https://apifox.com/apidoc/shared-c34f3f10-1982-4d24-8214-a8c2490fd02e', '_blank')
-    }
+  toGit: () => {
+    window.open('https://github.com/elpelaflow/PuntoShop-WMS', '_blank')
   }
 })
 
